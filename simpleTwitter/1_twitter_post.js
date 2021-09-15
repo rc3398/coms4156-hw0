@@ -1,3 +1,4 @@
+// Added some comments here 09-14-21
 $(document).ready(function () {
   // jQuery stuff here
   const $userName = 'John Cena';

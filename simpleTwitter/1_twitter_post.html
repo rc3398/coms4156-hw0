@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>SimpleTwitter</title>
+    <style>
+      #tweetContainerRow {
+        margin: 5%;
+      }
+
+      #tweetH1Div {
+        text-align: left;
+        margin-bottom: 5%;
+      }
+
+      #tweet_Max30Chars {
+        font-size: 0.8rem;
+        font-style: italic;
+        font-weight: 500;
+      }
+
+      #tweetDiv2 {
+        margin: 1% 0;
+      }
+
+      #characters_remaining {
+        margin-left: 3%;
+        color: lightgrey;
+        font-weight: normal;
+        font-size: 1.4rem;
+      }
+
+      #characters_remaining_text {
+        color: lightgrey;
+        font-weight: 600;
+        font-size: 0.8rem;
+      }
+
+      .overCharLimit {
+        color: red !important;
+        font-weight: bold !important;
+      }
+
+      #titleTweetsContainer {
+        margin: 5% 0;
+      }
+
+      #tweetsContainer {
+        margin-top: 5%;
+      }
+
+      .twtrUserHandle {
+        font-size: 0.8rem;
+        margin-right: 5%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-center" id="tweetContainerRow">
+        <div class="col-xs-10 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+          <div id="tweetH1Div">
+            <h1>Post Tweets</h1>
+          </div>
+          <div id="tweetDiv1">
+            <input size="30" id="tweetForm" type="text" placeholder="Write tweet here" aria-label="Write tweet here">
+          </div>
+          <div id="tweetDiv2">
+            <span>
+              <button type="submit" class="btn btn-primary btn-sm" id="postTweetBtn">Post Tweet</button>
+            </span>
+            <span id="characters_remaining"></span>
+            <span id="characters_remaining_text"> Character(s) left </span>
+          </div>
+          
+          <h5 id="titleTweetsContainer">What's happening?</h5>
+          <div id="tweetsContainer">
+            <ul class="list-group"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- jQuery stuff here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="1_twitter_post.js"></script>    
+    <script type = "text/javascript"></script>
+  </body>
+</html>
